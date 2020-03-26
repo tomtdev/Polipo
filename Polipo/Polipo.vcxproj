@@ -84,17 +84,18 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;HAS_STDINT_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -114,13 +115,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_WINSOCK_DEPRECATED_NO_WARNINGS;HAS_STDINT_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -129,6 +130,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -151,16 +153,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="atom.h" />
+    <ClInclude Include="auth.h" />
+    <ClInclude Include="chunk.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="dirent_compat.h" />
+    <ClInclude Include="diskcache.h" />
+    <ClInclude Include="dns.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="forbidden.h" />
+    <ClInclude Include="ftsimport.h" />
+    <ClInclude Include="fts_compat.h" />
+    <ClInclude Include="http.h" />
+    <ClInclude Include="http_parse.h" />
+    <ClInclude Include="io.h" />
+    <ClInclude Include="local.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="md5import.h" />
+    <ClInclude Include="mingw.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="parse_time.h" />
+    <ClInclude Include="polipo.h" />
+    <ClInclude Include="server.h" />
+    <ClInclude Include="socks.h" />
+    <ClInclude Include="tunnel.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Polipo.cpp" />
+    <ClCompile Include="atom.c" />
+    <ClCompile Include="auth.c" />
+    <ClCompile Include="chunk.c" />
+    <ClCompile Include="client.c" />
+    <ClCompile Include="config.c" />
+    <ClCompile Include="dirent_compat.c" />
+    <ClCompile Include="diskcache.c" />
+    <ClCompile Include="dns.c" />
+    <ClCompile Include="event.c" />
+    <ClCompile Include="forbidden.c" />
+    <ClCompile Include="ftsimport.c" />
+    <ClCompile Include="fts_compat.c" />
+    <ClCompile Include="http.c" />
+    <ClCompile Include="http_parse.c" />
+    <ClCompile Include="io.c" />
+    <ClCompile Include="local.c" />
+    <ClCompile Include="log.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="md5import.c" />
+    <ClCompile Include="mingw.c" />
+    <ClCompile Include="object.c" />
+    <ClCompile Include="parse_time.c" />
+    <ClCompile Include="server.c" />
+    <ClCompile Include="socks.c" />
+    <ClCompile Include="tunnel.c" />
+    <ClCompile Include="util.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

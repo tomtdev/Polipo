@@ -15,15 +15,168 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="atom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chunk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dirent_compat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="diskcache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dns.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="forbidden.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fts_compat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ftsimport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="http.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="http_parse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="local.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="md5import.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mingw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="parse_time.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="polipo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="socks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tunnel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="atom.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Polipo.cpp">
+    <ClCompile Include="auth.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chunk.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="client.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="config.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dirent_compat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="diskcache.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dns.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="event.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="forbidden.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fts_compat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ftsimport.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="http.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="http_parse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="io.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="local.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md5import.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mingw.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="object.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="parse_time.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="server.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="socks.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tunnel.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
